@@ -9,6 +9,11 @@ class Circle():
     
     def get_radius(self):
         return self.radius
+
+    def set_radius(self,radius):
+        if(radius<=0):
+            raise ValueError("El valor del radio tiene que ser mayor a 0")
+        self.radius = radius
     
     def get_area(self):
         return math.pi * math.pow(self.radius,2)

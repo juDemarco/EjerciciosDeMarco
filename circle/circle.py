@@ -23,5 +23,8 @@ class Circle():
         newCircle = Circle(self.radius * n)
         
         return newCircle
+    
+    def __str__(self):
+        return f"Soy un Circulo de radio {self.radius}"
         
     pass
